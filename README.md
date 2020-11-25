@@ -11,33 +11,43 @@ I have not tested the Windows and Linux builds.
 I did not discover a way to customize the application icons using Processing. Though this would be possible with 3rd party tools, it is not in the spirit of the challenge.
 
 - How many proud lines of code did you have to write?
+
 48. A better programmer than I may have been able to do it more efficiently.
 
 - How many different game engine concepts (eg: physics bodies, matrices, events, transforms, camera) did you have to be knowledgeable of before you could build your implementation?
+
 Zero.
 
 - Did you have to use classes, inheritance, structs or any other overly complex data structures? Why does the engine you are using require these complexities for such a trivial game?
+
 No.
 
 - How many times did you have to start and stop execution? What was the feedback loop like when you were developing?
+
 Several times. Processing does not hot-load. The feedback loop is very good though. Errors are reported in the IDE as you type and runtime errors come with accurate, concise information.
 
 - Were you required to use a dedicated IDE? How long did it take you to get familiar with the IDE when you first started off?
+
 Yes. It was a long time ago but probably not that long. It's a fairly simple system.
 
 - Is the source code for the game easily sharable? If you have to share more than just one file and some sprites, what else did you have to provide? What do these ancillary files represent?
+
 Source code is easily sharable. Nothing more than the 48 lines I wrote was needed to be shared.
 
 - How difficult was it to set up a 720p canvas?
+
 Trivially easy.
 
 - How difficult was it to export to "all the platforms"?
+
 Easy to export executables from a Mac. See caveats above though. 
 
 - What was the output binary size?
+
 On Mac, over 200MB because Java is embedded. The Windows and Linux executables are small but I imagine only because they require the runtime to be installed.
 
 - Be sensitive to what pains the engine of your choice puts you through to build the simplest of 2D game and ask yourself if it's acceptable. What could the engine have done better?
+
 Processing is actually pretty good for 2D graphics and is designed (well) to make it easy for novice or non-technical users. I could have wished for: An inbuilt way to export to HTML/JavaScript; less Java-ishness; smaller runtime.
 
 
