@@ -1,3 +1,4 @@
+
 int x = 615;
 int y = 335;
 int dir_x = random(1) > 0.5 ? 1 : -1;
@@ -8,7 +9,7 @@ boolean pause = false;
 void setup() {
   size(1280, 720);
   background(0);
-  change_fill(rect_colour);
+  change_fill();
 }
 
 void draw() {
@@ -18,16 +19,16 @@ void draw() {
   }
   if (x + 50 > 1280 || x < 0 ) { 
     dir_x = - dir_x; 
-    fill(random(255), random(255), random(255));
+    change_fill();
   }
   if (y + 50 > 720 || y < 0)  { 
     dir_y = - dir_y; 
-    fill(random(255), random(255), random(255));
+    change_fill();
   }
   rect(x, y, 50, 50);
 }
 
-void change_fill(int[] rect_colour){
+void change_fill(){
   int[] col = new int[3];
   while(true){
     col[0] = (int)random(255);
